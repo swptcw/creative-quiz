@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f3ff 0%, #ffe9f3 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.progress-container {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  background: #ddd;
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(135deg, #9b59b6 0%, #e91e63 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.question-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-button {
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.option-button:hover {
+  border-color: #9b59b6;
+  background: #f8f3ff;
+}
+
+/* Email Prompt Styles */
+.email-prompt h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.email-prompt p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.email-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #d4b3e8;
+  outline: none;
+}
+
+.btn-primary {
+  width: 100%;
+  background: linear-gradient(135deg, #9b59b6 0%, #e91e63 100%);
+  color: white;
+  padding: 15px;
+  fontSize: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-skip {
+  width: 100%;
+  background: transparent;
+  color: #888;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Results Styles */
+.results h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result-icon {
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.result-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.result-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.result-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.result-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.result-card li {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.result-card li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.result-cta {
+  background: linear-gradient(135deg, #e8d8f5 0%, #ffd6e8 100%);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.result-cta p {
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-secondary {
+  width: 100%;
+  background: #ddd;
+  color: #333;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #ccc;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+}
